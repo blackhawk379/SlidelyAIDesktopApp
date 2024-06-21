@@ -11,12 +11,12 @@ Windows Desktop App in Visual Basic using Visual Studio. Features include:
 
 ### Prerequisites
 - Visual Studio
-- Running backend server (see [Backend Server Repository](#))
+- Running backend server (see [https://github.com/blackhawk379/SlidelyAI-Backend-Sever](#))
 
 ### Installation
 1. Clone the repository:
     ```bash
-    git clone <frontend-repository-url>
+    git clone [https://github.com/blackhawk379/SlidelyAIDesktopApp.git]
     ```
 2. Open the project in Visual Studio.
 3. Run the application (`F5` or `Debug > Start Debugging`).
@@ -27,4 +27,4 @@ Windows Desktop App in Visual Basic using Visual Studio. Features include:
 - **Submit Form**: `Ctrl + S`
 
 ## Backend Server
-Ensure the backend server is running. More details: [Backend Server Repository](#).
+Ensure the backend server is running. More details: [https://github.com/blackhawk379/SlidelyAI-Backend-Sever](#).
