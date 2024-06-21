@@ -29,6 +29,16 @@
             btnCreateSubmission.PerformClick()
             ' Mark the event as handled
             e.Handled = True
+        ElseIf e.Control AndAlso e.KeyCode = Keys.S Then
+            ' Trigger the button's click event
+            btnSearchSubmission.PerformClick()
+            ' Mark the event as handled
+            e.Handled = True
         End If
+    End Sub
+
+    Private Sub btnSearchSubmission_Click(sender As Object, e As EventArgs) Handles btnSearchSubmission.Click
+        Dim searchForm As New SearchSubmissionForm()
+        searchForm.Show()
     End Sub
 End Class

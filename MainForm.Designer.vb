@@ -25,6 +25,7 @@ Partial Class MainForm
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btnCreateSubmission = New System.Windows.Forms.Button()
         Me.btnViewSubmissions = New System.Windows.Forms.Button()
+        Me.btnSearchSubmission = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label6
@@ -59,11 +60,23 @@ Partial Class MainForm
         Me.btnViewSubmissions.Text = "VIEW SUBMISSIONS (CTRL + V)"
         Me.btnViewSubmissions.UseVisualStyleBackColor = False
         '
+        'btnSearchSubmission
+        '
+        Me.btnSearchSubmission.BackColor = System.Drawing.Color.Orange
+        Me.btnSearchSubmission.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSearchSubmission.Location = New System.Drawing.Point(26, 165)
+        Me.btnSearchSubmission.Name = "btnSearchSubmission"
+        Me.btnSearchSubmission.Size = New System.Drawing.Size(469, 49)
+        Me.btnSearchSubmission.TabIndex = 42
+        Me.btnSearchSubmission.Text = "SEARCH SUBMISSION (CTRL + S)"
+        Me.btnSearchSubmission.UseVisualStyleBackColor = False
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(515, 190)
+        Me.ClientSize = New System.Drawing.Size(522, 288)
+        Me.Controls.Add(Me.btnSearchSubmission)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.btnCreateSubmission)
         Me.Controls.Add(Me.btnViewSubmissions)
@@ -77,4 +90,5 @@ Partial Class MainForm
     Friend WithEvents Label6 As Label
     Friend WithEvents btnCreateSubmission As Button
     Friend WithEvents btnViewSubmissions As Button
+    Friend WithEvents btnSearchSubmission As Button
 End Class
