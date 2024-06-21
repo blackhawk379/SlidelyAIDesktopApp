@@ -40,7 +40,7 @@ Public Class EditSubmissionForm
     Private Async Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
         Dim client As New HttpClient()
         Dim content As New StringContent(
-            $"{{""name"": ""{txtName.Text}"", ""email"": ""{txtEmail.Text}"", ""phone"": ""{txtPhone.Text}"", ""github"": ""{txtGithubLink.Text}"", ""stopwatch"": ""{stopwatch.Elapsed.ToString("hh\:mm\:ss")}""}}",
+            $"{{""name"": ""{txtName.Text}"", ""email"": ""{txtEmail.Text}"", ""phone"": ""{txtPhone.Text}"", ""github"": ""{txtGithubLink.Text}"", ""stopwatch"": ""{(stopwatch.Elapsed + previousElapsedTime).ToString("hh\:mm\:ss")}""}}",
             Encoding.UTF8, "application/json")
 
         Dim response = Await client.PutAsync($"http://localhost:3000/update?index={submissionIndex}", content)
@@ -61,7 +61,7 @@ Public Class EditSubmissionForm
             stopwatch.Start()
             timerStopwatch.Start()
         End If
-        txtStopwatchTime.Text = stopwatch.Elapsed.ToString("hh\:mm\:ss")
+        txtStopwatchTime.Text = (stopwatch.Elapsed + previousElapsedTime).ToString("hh\:mm\:ss")
     End Sub
 
     Private Sub EditSubmissionForm_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
