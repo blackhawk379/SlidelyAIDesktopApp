@@ -76,15 +76,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
-    <Compile Include="BottomBorderTextBox.Designer.vb">
-      <DependentUpon>BottomBorderTextBox.vb</DependentUpon>
-    </Compile>
-    <Compile Include="BottomBorderTextBox.vb">
-      <SubType>Component</SubType>
-    </Compile>
->>>>>>> 73ee442e59c85efc4c4423903f3401081a7cd409
     <Compile Include="CreateSubmissionForm.Designer.vb">
       <DependentUpon>CreateSubmissionForm.vb</DependentUpon>
     </Compile>
